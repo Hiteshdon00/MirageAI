@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LEVEL 100 FIXED: SCROLL & VISIBILITY */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  
+  /* REMOVED: overscroll-behavior-y: none; (This fixed the laptop scroll issue) */
+  
+  scroll-behavior: smooth;
+  background-color: #fdfbf7; 
+}
+
+/* Sharp text rendering */
+h1, h2, h3, p, span {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* SOLID ROYAL GOLD (Visibility Safe) */
+.text-liquid-gold {
+  color: #b38728; 
+  /* Hard shadow ensures readability on light backgrounds */
+  filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.15)); 
+}
+
